@@ -34,6 +34,14 @@ p {
   padding-bottom: 40px;
 }
 
+.app-heading {
+  text-align: left;
+}
+.app-description {
+  text-align: left !important;
+  width: 100%;
+}
+
 .navigation-links {
   display: flex;
   margin-top: 40px;
@@ -74,4 +82,43 @@ a:hover {
 
 .email-link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 45px !important;
+  }
+
+  h2 {
+    font-size: 30px !important;
+  }
+
+  h3 {
+    margin-top: 15px !important;
+  }
+
+  .col-6 {
+    flex: 0 0 auto !important;
+    width: 100% !important;
+  }
+
+  .app-heading {
+    text-align: center !important;
+    font-size: 35px !important;
+  }
+
+  .app-description {
+    text-align: center !important;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .app-link {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    max-width: 250px;
+  }
 }
